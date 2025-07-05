@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gallery-item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: flex 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+        }
+        .gallery-item:hover {
+            flex: 5 !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function updateDateTime() {
+            var now = new Date();
+            document.getElementById("datetime").innerHTML = 
+                now.toLocaleDateString() + " " + now.toLocaleTimeString();
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body class="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat text-white" style="background-image: url('eliott-van-buggenhout-MhdqYgfqAYM-unsplash.jpg');" onload="updateDateTime()">
+    <header class="bg-teal-700 bg-opacity-90 w-full py-6 shadow-lg">
+        <h1 class="text-4xl font-bold tracking-wide">Welcome to Karzai's Personal Website</h1>
+    </header>
+
+    <div id="datetime" class="text-center text-xl font-semibold mt-4 bg-teal-800 bg-opacity-70 px-4 py-2 rounded-md mx-auto inline-block"></div>
+
+    <nav class="flex justify-center gap-4 my-6 flex-wrap">
+         <a href="INDEX1.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Home</a>
+        <a href="aboutme.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">About Me</a>
+        <a href="education.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Education</a>
+        <a href="family.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Family</a>
+        <a href="experience.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Experience</a>
+        <a href="friends.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Friends</a>
+        <a href="gallery.html" class="bg-teal-600 hover:bg-teal-500 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Gallery</a>
+    </nav>
+
+     <main class="flex-grow flex flex-col items-center px-4">
+        <h1 class="text-3xl font-bold my-6">This Is About Me</h1>
+        <div class="max-w-2xl text-lg leading-relaxed bg-teal-800 bg-opacity-70 p-6 rounded-lg shadow-md">
+            <p class="mb-4"> when it comes to experience. I bring a diverse range of experiences that reflect both precision and resilience. With a background in boxing, I’ve developed discipline, mental toughness, and the ability to perform under pressure qualities that have translated well into my other passions. As a watchmaker and horology enthusiast, I’ve honed my attention to detail and craftsmanship, while my interest in fragrance collecting has deepened my appreciation for artistry and refinement. Professionally, I gained valuable experience as an intern at Jabatan Laut Malaysia, where I supported the Human Resources department and contributed to administrative and personnel-related tasks. Together, these experiences demonstrate my adaptability, focus, and commitment to excellence in both technical and high-pressure environments. I also have experience the blue collar line of work, at the project i used to work at. i was issued to be the person in charge of overseeing the deliveries of raw materials, it was a tough job to do but for the experience. i like to think that it was worth it. I am proud of myself being able to handle kind of jobs thrown at me
+
+            </p>
+        </div>
+
+    <main class="flex-grow flex flex-col items-center px-4">
+        <h1 class="text-3xl font-bold my-6">My Experience</h1>
+        <div class="flex w-full max-w-5xl h-80 gap-2 my-8">
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('truck\ 1.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('truck\ 2.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('jlm.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('sir\ faris.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('boxing.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-x1" style="background-image: url('meself\ 2.jpg');"></div></div>
+        </div>
+
+         <main class="flex-grow flex flex-col items-center px-4">
+        <h1 class="text-3xl font-bold my-6">CONTACT ME</h1>
+        <div class="max-w-2xl text-lg leading-relaxed bg-teal-800 bg-opacity-70 p-6 rounded-lg shadow-md">
+            <p class="mb-4">email: ihsankarzai@gmail.com </P>
+                          address: No 39 Jalan Sri Siantan 49, Klang, Selangor.</P>
+            </p>
+    </main>
+
+    <footer class="bg-teal-700 bg-opacity-90 w-full py-4 text-center mt-auto">
+        <p class="text-sm">All rights reserved by Kz, 2025</p>
+        <p class="text-sm">For Educational Purposes</p>
+    </footer>
+</body>
+</html>

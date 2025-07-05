@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gallery-item {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: flex 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+        }
+        .gallery-item:hover {
+            flex: 5 !important;
+        }
+    </style>
+    <script type="text/javascript">
+        function updateDateTime() {
+            var now = new Date();
+            document.getElementById("datetime").innerHTML = 
+                now.toLocaleDateString() + " " + now.toLocaleTimeString();
+        }
+        setInterval(updateDateTime, 1000);
+    </script>
+</head>
+<body class="min-h-screen flex flex-col bg-cover bg-center bg-no-repeat text-white" style="background-image: url('remy-penet-f-fl0yNqEsU-unsplash.jpg');" onload="updateDateTime()">
+    <header class="bg-teal-700 bg-opacity-90 w-full py-6 shadow-lg">
+        <h1 class="text-4xl font-bold tracking-wide">Welcome to Karzai's Personal Website</h1>
+    </header>
+
+    <div id="datetime" class="text-center text-xl font-semibold mt-4 bg-teal-800 bg-opacity-70 px-4 py-2 rounded-md mx-auto inline-block"></div>
+
+    <nav class="flex justify-center gap-4 my-6 flex-wrap">
+         <a href="INDEX1.html" class="bg-teal-600 hover:bg-back-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Home</a>
+        <a href="aboutme.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">About Me</a>
+        <a href="education.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Education</a>
+        <a href="family.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Family</a>
+        <a href="experience.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Experience</a>
+        <a href="friends.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Friends</a>
+        <a href="gallery.html" class="bg-teal-600 hover:bg-black-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Gallery</a>
+    </nav>
+
+    <main class="flex-grow flex flex-col items-center px-4">
+        <h1 class="text-3xl font-bold my-6">This Is About Me</h1>
+        <div class="max-w-2xl text-lg leading-relaxed bg-teal-800 bg-opacity-70 p-6 rounded-lg shadow-md">
+            <p class="mb-4">Hello and good day, my name is Sheikh Karzai Ihsan or also known as Zai. I am 21 years old and currently pursuing my study in Diploma of Information Management.</p>
+            <p>I was born in Klang, Selangor at Razif Maternity Clinic on the 23rd of December 2004 and i am the youngest of 12 siblings.</p>
+             <p>A little fun facts about me, I am a poet. I like to write poetry and also to recite them, most of my works are to be kept only for me.</p>
+              <p>I have a lot of hobby however my passion was more towards poetry, horology and collecting fragrances. In terms of sports i am well versed in the art of fencing.</p>
+               <p>One of the anchor for my life is my dreams. The thought of me failing to achieve them and thus failling in general is enough for me to focus into achieving more for my future.</p>
+        </div>
+
+        <div class="flex w-full max-w-5xl h-80 gap-2 my-8">
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann3.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann4.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann5.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann6.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann10.jpg');"></div>
+            <div class="gallery-item flex-1 rounded-xl" style="background-image: url('iann9.jpg');"></div>
+        </div>
+
+
+    <footer class="bg-teal-700 bg-opacity-90 w-full py-4 text-center mt-auto">
+        <p class="text-sm">All rights reserved by Kz, 2025</p>
+        <p class="text-sm">For Educational Purposes</p>
+    </footer>
+</body>
+</html>
